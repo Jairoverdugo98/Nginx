@@ -10,9 +10,9 @@ Además de otras tareas, los servidores web son los encargados de la entrega de 
 Fue creado para solucionar las principales limitaciones de rendimiento de Apache, por ejemplo el llamado problema c10k que se produce a partir de 10.000 conexiones simultáneas a una web.
 
 ## Indice
-[1.- Comparativa con Apache](comparativa.md)
+1.- [Comparativa con Apache](comparativa.md)
 
-2.- Instalación
+2.- [Instalación](instalacion.md)
 
 3.- Casos prácticos
 
