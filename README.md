@@ -14,7 +14,7 @@ Fue creado para solucionar las principales limitaciones de rendimiento de Apache
 
 2.- [Instalación](instalacion.md)
 
-3.- Casos prácticos
+3.- [Casos prácticos](casos.md)
 
 
 ## Referencias
