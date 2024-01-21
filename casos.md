@@ -20,6 +20,3 @@ Tras la moficacion quedaria de la siguiente manera:
 ![image](/img/caso3.1.png)
 
 ![image](/img/caso3.2.png)
-
-**d) Virtual Hosting**
-

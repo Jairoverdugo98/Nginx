@@ -16,6 +16,8 @@ Fue creado para solucionar las principales limitaciones de rendimiento de Apache
 
 3.- [Casos prácticos](casos.md)
 
+4.- [Balanceo de carga](balanceo.md)
+
 
 ## Referencias
 [Web empresa](https://www.webempresa.com/hosting/nginx-que-es.html#:~:text=Nginx%20es%20un%20servidor%20web,normalmente%20desde%20un%20navegador%20web.) 
