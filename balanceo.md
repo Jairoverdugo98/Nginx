@@ -1,14 +1,14 @@
-## Balanceo De Carga
+# Balanceo De Carga
 
 En este apartado vamos a realizar un balanceo de carga paso por paso desde nuestro servidor desde https a dos sitios web que tengan también https.
 
-1.- Debemos instalar Nginx en todos los servidores
+## 1.- Debemos instalar Nginx en todos los servidores
 
 ```
 apt-get install nginx -y
 ````
 
-2.- Una vez instalado , ajustaremos la configuración en ambos servidores
+## 2.-Configuración en ambos servidores
 
 - En el primer servidor, eliminaremos el archivo "index.html" para crear uno nuevo
 
@@ -31,7 +31,8 @@ El segundo servidor quedara de la siguiente manera:
 
 ![image](/img/index2.png)
 
-3.- Configuración del Servidor de Balanceo de Carga, a continuación configuraremos un servidor balanceador de carga que distribuya la carga entre ambos servidores de aplicaciones.
+## 3.- Configuración del Servidor de Balanceo de Carga
+A continuación configuraremos un servidor balanceador de carga que distribuya la carga entre ambos servidores de aplicaciones.
 
 Primero eliminaremos el archivo de configuración predeterminado de Nginx y creamos uno nuevo de balanceador de carga.
 
@@ -43,7 +44,7 @@ Quedaria de la siguiente manera:
 
 ![image](/img/balancing.png)
 
-4.-Protección de Nginx con Let's Encrypt
+## 4.-Protección de Nginx con Let's Encrypt
 
 - Para utilizar Let's Encrypt y obtener un certificado SSL el primer paso es instalar el software Certbort en tu servidor.
 `````
@@ -65,7 +66,17 @@ sudo ufw delete allow 'Nginx HTTP'
 
 - El siguiente paso sera obtener nuestro certificado SSL con el siguiente comando:
 `````
-sudo certbot --nginx -d jairoexamen.ddns.net
+sudo certbot --nginx -d jairoverdugo.ddns.net
 `````
 
+Si es la primera vez que ejecutas Certbot, se le pedirá que ingrese una dirección de correo electrónico y aceptes las condidiciones de servicio.
+
+Una vez que se haya verificado el certificado, Certbot configurará automáticamente los archivos para que su dominio sea accesible a través de HTTPS.
+
+
+## 5.-Comprobación
+
+![image](/img/Comprobacion1.png)
+
+![image](/img/Comprobacion2.png)
 
