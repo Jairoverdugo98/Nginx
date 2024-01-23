@@ -42,7 +42,7 @@ nano /etc/nginx/conf.d/balancing.conf
 ````
 Quedaria de la siguiente manera:
 
-![image](/img/balancing.png)
+![image](/img/Balancing.png)
 
 ## 4.-Protección de Nginx con Let's Encrypt
 
